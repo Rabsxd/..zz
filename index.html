@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Well Soon, Sayang 💖</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Amplop (awal) -->
+    <div class="envelope" onclick="openLetter()">
+        <img src="envelope.png" alt="Buka Surat" />
+        <p>Klik untuk membuka surat</p>
+    </div>
+
+    <!-- Isi surat (disembunyikan dulu) -->
+    <div class="container hidden" id="letterContent">
+        <h1>🌼 Cepat Sembuh Ya, Sayangggg 🌼</h1>
+
+        <!-- Gambar 800x400 -->
+        <img src="ayang.jpg" alt="Gambar Semangat" class="banner-image" />
+
+        <p class="message">
+            Aku tahu kamu lagi sakitt sekaranggg, tapi aku taoo bntr lagii pastii kamo sembuuuuhh.
+            Istirahat yang cukup ya, mamm nyaa dimakannn truss minum obatnaa yaaa ❤️<br><br>
+            kangen main sama kamo lagii, ga sabarr mainn sama kamo lagii 😘
+        </p>
+        <div class="heart">❤️❤️❤️❤️❤️</div>
+
+    </div>
+
+    <script>
+        function openLetter() {
+            document.querySelector('.envelope').style.display = 'none';
+            const content = document.getElementById('letterContent');
+            content.classList.remove('hidden');
+            content.classList.add('fade-in');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  flex-direction: column;
+}
+
+.envelope {
+  text-align: center;
+  cursor: pointer;
+  animation: pulse 1.2s infinite;
+}
+
+.envelope img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+  display: none;
+}
+
+.container.fade-in {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 28px;
+  color: #d6336c;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.heart {
+  font-size: 48px;
+  animation: pulse 1.2s infinite;
+  margin: 20px 0;
+}
+
+.signature {
+  font-size: 16px;
+  color: #555;
+  margin-top: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
